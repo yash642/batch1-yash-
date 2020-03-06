@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+
+<h2 [ngClass]="{pass : myPass === ''}">Enter password</h2>
+<input type="password" [(ngModel)]="myPass" />
+
+<ul *ngIf="myPass === 'hi'">
+    <h1>Employee : {{employee}}</h1>
+    <li *ngFor="let emp of employee">
+        Employee::{{emp}}
+    </li>
+</ul>
+
+<h2 [ngStyle]="{color :myPass ==='nag'? 'green':'red'}"> will become green if password is correct</h2>
+
+<span customdirective>
+  this is the span mouasdjhbadbakjsdbaksbdajhsbd
+</span>
